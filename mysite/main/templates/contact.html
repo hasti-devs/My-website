@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="contact-section">
+
+    <h2 class="section-title">تماس با من</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h3>با من در ارتباط باشید</h3>
+
+            <p>
+                اگر سوالی دارید یا قصد همکاری دارید،
+                می‌توانید از طریق فرم زیر با من در ارتباط باشید.
+            </p>
+
+            <div class="contact-item">
+                <i class='bx bx-envelope'></i>
+                <div>
+                    <span>ایمیل</span>
+                    <p>hastikhazaei325@gmail.com</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <form class="contact-form" method="POST">
+
+            {% csrf_token %}
+
+            <input
+                type="text"
+                name="name"
+                placeholder="نام"
+                required>
+
+            <input
+                type="email"
+                name="email"
+                placeholder="ایمیل"
+                required>
+
+            <input
+                type="text"
+                name="subject"
+                placeholder="موضوع"
+                required>
+
+            <textarea
+                name="message"
+                placeholder="پیام شما"
+                rows="6"
+                required></textarea>
+
+            <button type="submit">
+                ارسال پیام
+                <i class='bx bx-send'></i>
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+{% endblock %}

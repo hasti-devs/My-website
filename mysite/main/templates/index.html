@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<body>
+
+
+    <main class="l-main">
+        <section class="home bd-grid" id="home">
+            <div class="home-data">
+                <h1 class="home-title">سلام <br>من <span class="home-title-color">هستی</span> هستم <br> طراح سایت</h1>
+                <a href="#" class="button">تماس</a>
+            </div>
+
+            <div class="home-social">
+                <a href="#" class="home-social-icon"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#" class="home-social-icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="home-social-icon"><i class='bx bxl-github' ></i></a>
+            </div>
+
+            <div class="home-img">
+                <img src="{% static 'images/1.jpg' %}" alt="image">
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <h2 class="section-title" >درباره من</h2>
+
+
+            <div class="about-container bd-grid">
+                <div class="about-img">
+                    <img src="{% static 'images/2.jpg' %}" alt="image">
+                </div>
+
+                <div>
+                    <h2 class="about-subtitle">من هستی هستم</h2>
+                    <p class="about-text">به عنوان یک طراح وب پرشور، من در ایجاد وب‌سایت‌های جذاب از نظر بصری و کاربرپسند پیشرفت می‌کنم. سفر من در طراحی وب با شیفتگی به این موضوع آغاز شد که چگونه طراحی می‌تواند تجربه کاربری را بهبود بخشد.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 class="section-title">مهارت ها</h2>
+
+            <div class="skills-container bd-grid">
+                <div>
+                    <h2 class="skills-subtitle">مهارت های حرفه ای</h2>
+                    <p class="skills-text">من عاشق این هستم که خارج از چارچوب فکر کنم و ایده‌های منحصر به فرد را از طریق طراحی به واقعیت تبدیل کنم. من در HTML، CSS و JavaScriptمهارت دارم که تضمین می‌کند طرح‌های من نه تنها زیبا، بلکه کاربردی نیز باشند. من نیازها و ترجیحات کاربران را در اولویت قرار می‌دهم و برای درک رفتارها و ترجیحات آنها تحقیق می‌کنم.</p>
+
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <i class='bx bxl-html5 skills-icon' ></i>
+                            <span class="skills-name">HTML5</span>
+                        </div>
+
+                        <div>
+                            <span class="skills-percentage">95%</span>
+                        </div>
+
+                        <div class="skills-bar skills-html"></div>
+                    </div>
+
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <i class='bx bxl-css3 skills-icon' ></i>
+                            <span class="skills-name">CSS3</span>
+                        </div>
+
+                        <div>
+                            <span class="skills-percentage">85%</span>
+                        </div>
+
+                        <div class="skills-bar skills-css"></div>
+                    </div>
+
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <i class='bx bxl-javascript skills-icon' ></i>
+                            <span class="skills-name">JAVASCRIPT</span>
+                        </div>
+
+                        <div>
+                            <span class="skills-percentage">65%</span>
+                        </div>
+
+                        <div class="skills-bar skills-js"></div>
+                    </div>
+
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <i class='bx bxs-paint skills-icon' ></i>
+                            <span class="skills-name">UX/UI</span>
+                        </div>
+
+                        <div>
+                            <span class="skills-percentage">85%</span>
+                        </div>
+
+                        <div class="skills-bar skills-ux"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <img class="skills-img" src="{% static 'images/main/5.jpg' %}" alt="image">
+                </div>
+            </div>
+        </section>
+
+        <section class="work section" id="work">
+            <h2 class="section-title">کار</h2>
+
+            <div class="work-container bd-grid">
+                <div class="work-img">
+                    <img src="{% static 'images/work1.jpg' %}" alt="image">
+                </div>
+
+                <div class="work-img">
+                    <img src="{% static 'images/work2.jpg' %}" alt="image">
+                </div>
+
+                <div class="work-img">
+                    <img src="{% static 'images/p4.png' %}" alt="image">
+                </div>
+
+                <div class="work-img">
+                    <img src="{% static 'images/work4.jpg' %}" alt="image">
+                </div>
+
+                <div class="work-img">
+                    <img src="{% static 'images/p1.jpg' %}" alt="image">
+                </div>
+
+                <div class="work-img">
+                    <img src="{% static 'images/work6.jpg' %}" alt="image">
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <h2 class="section-title">تماس</h2>
+
+            <div class="contact-container bd-grid">
+                <form action="" class="contact-form">
+                    <input type="text" placeholder="Name" class="contact-input">
+                    <input type="email" placeholder="Email" class="contact-input">
+                    <textarea name="" id="" cols="0" rows="10" class="contact-input"></textarea>
+
+                    <input type="button" value="Send" class="contact-button button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+{% endblock %}
